@@ -1,33 +1,27 @@
 <manifest>
     <!-- Remotes -->
-    <remote name="sai" fetch="https://github.com/Saikrishna1504"
-        revision="udc" />
-    <remote name="bb" fetch="https://bitbucket.org/Saikrishna1504"
-    	revision="udc" />
+    <remote name="sai" fetch="https://github.com/Saikrishna1504" />
+    <remote name="bb" fetch="https://bitbucket.org/Saikrishna1504" />
 
     <!-- Device / Kernel -->
-    <project path="device/redmi/begonia" name="device_redmi_begonia"
-        remote="sai" />
-    <project path="kernel/xiaomi/mt6785" name="kernel_xiaomi_mt6785"
-        remote="sai" />
+    <project path="device/redmi/begonia" name="device_redmi_begonia" remote="sai" revision="axion" />
+    <project path="kernel/xiaomi/mt6785" name="kernel_xiaomi_mt6785" remote="sai"
+        revision="tmp" clone-depth="1" />
 
     <!-- Sepolicy -->
-    <project path="device/mediatek/sepolicy" name="device_mediatek_sepolicy"
-        remote="sai" />
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="sai" revision="bka" />
 
     <!-- Hardware -->
-    <project path="hardware/mediatek" name="hardware_mediatek"
-        remote="sai" />
+    <project path="hardware/mediatek" name="hardware_mediatek" remote="sai" revision="bka" />
+    <project path="hardware/xiaomi" name="hardware_xiaomi" remote="sai" revision="bka" />
 
     <!-- Proprietary vendor -->
-    <project path="vendor/redmi/begonia" name="vendor_redmi_begonia"
-        remote="sai" />
-    <project path="vendor/redmi/begonia-ims" name="vendor_redmi_begonia-ims"
-        remote="sai" />
-    <project path="vendor/redmi/begonia-firmware" name="vendor_redmi_begonia-firmware"
-        remote="sai" />
+    <project path="vendor/redmi/begonia" name="vendor_redmi_begonia" remote="sai" revision="bka"
+        clone-depth="1" />
+    <project path="vendor/redmi/begonia-firmware" name="vendor_redmi_begonia-firmware" remote="sai" revision="bka"
+        clone-depth="1" />
 
     <!-- MiuiLeica Cam -->
     <project path="vendor/MiuiCameraLeica" name="vendor_MiuiCameraLeica"
-        remote="bb" />
+        remote="bb" revision="udc" clone-depth="1" />
 </manifest>
