@@ -1,12 +1,13 @@
+<!-- Device : Redmi Note 8 Pro (begonia) -->
 <manifest>
     <!-- Remotes -->
     <remote name="sai" fetch="https://github.com/Saikrishna1504" />
-    <remote name="bb" fetch="https://bitbucket.org/Saikrishna1504" />
+    <remote name="bb" fetch="https://gitea.com/Saikrishna1504" />
 
     <!-- Device / Kernel -->
     <project path="device/redmi/begonia" name="device_redmi_begonia" remote="sai" revision="axion" />
     <project path="kernel/xiaomi/mt6785" name="kernel_xiaomi_mt6785" remote="sai"
-        revision="tmp" clone-depth="1" />
+        revision="main" clone-depth="1" />
 
     <!-- Sepolicy -->
     <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="sai" revision="bka" />
